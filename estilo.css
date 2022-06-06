@@ -51,6 +51,7 @@ nav {
     margin-bottom: 25px;
 }
 .social > a {
+    text-decoration: none;
     font-size: 15px;
     display: inline-block;/*queremos que este uno del lado del otro*/
     color: #21618c;
@@ -68,6 +69,7 @@ nav {
 .sobre-mi{
     margin-top: 120px;
     background: rgba(0, 0, 0, .1);
+    align-items: center;
 }
 
 .contenedor1{
@@ -83,6 +85,7 @@ nav {
   margin: 15px;
   padding: 5px 5px 5px 5px;  
   width: 40%;
+  height: 40%;
   background:  #21618c;
   border-radius: 5px;
 }
@@ -92,7 +95,7 @@ nav {
     margin-top: 14px;
     color:  #21618c;
     width: 55%;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 380;
 }
 
@@ -126,6 +129,7 @@ nav {
     margin: 30px;
     padding: 5px 5px 5px 5px;  
     width: 95%;
+    height: 95%;
     background:  #21618c;
     border-radius: 5px;
   }
@@ -162,4 +166,56 @@ nav {
     color:  #21618c;
     width: 60%;
     font-size: 18px;
+}
+
+@media screen and (max-width:1040px) {
+    .sobre-mi {
+        margin-top: 100px;
+        background: rgba(0, 0, 0, .1);
+        align-items: center;
+    }
+    .contenedor1 {
+        margin-top: 30px;
+        padding: 30px;
+        display: block;/*ordenamos en bloques*/
+        justify-content: space-evenly;/*pasamos una del lado de la otra*/
+        width: 100%;/*no ocupa el ancho total de la pagina*/
+        max-width: 1000px;/*el maximo ancho no pase de los 1000px*/
+        margin: auto;/*esta centra todo lo que este en contenedor*/
+        overflow: hidden;/*me corta lo que pasa el limite*/
+    }
+    .contenedor1 > img {
+        margin: 30px;
+        padding: 5px 5px 5px 5px;  
+        width: 95%;
+        height: 95%;
+        background:  #21618c;
+        border-radius: 5px;
+      }
+      .contenedor1 > p {
+        text-align: center;
+        font-weight: 300;
+        color:  #21618c;
+        width: 100%;
+        font-size: 22px;
+      }
+}
+
+@media screen and (max-width:680px) {
+    .contenedor2 h2 {
+        text-align: center;
+        margin-top: 14px;
+        color:  #21618c;
+        width: 100%;
+        font-size: 45px;
+        font-weight: 400;
+    }
+    .video > p {
+        margin-top: 70px;
+        text-align: center;
+        font-weight: 300;
+        color:  #21618c;
+        width: 60%;
+        font-size: 14px;
+    }
 }
